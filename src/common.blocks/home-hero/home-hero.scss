@@ -56,6 +56,8 @@
   }
 
   &__title {
+    opacity: 0;
+
     @include typo-big;
   }
 
