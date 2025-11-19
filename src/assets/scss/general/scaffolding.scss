@@ -1,0 +1,50 @@
+/* scaffolding */
+
+@use '@/assets/scss/general/variables' as *;
+@use '@/assets/scss/abstracts/mixins' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  font-family: Onest, Arial, sans-serif;
+}
+
+body > div#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip-path: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: $max-container-width;
+  padding: 0 16px;
+
+  @media screen and (min-width: $md) {
+    padding: 0 40px;
+  }
+}
