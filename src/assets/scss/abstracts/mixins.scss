@@ -237,3 +237,26 @@
   }
   /* stylelint-enable */
 }
+
+@mixin user-content {
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+
+    /* stylelint-disable */
+    @media screen and (min-width: $md) {
+      font-size: 20px;
+      line-height: 130%;
+    }
+    /* stylelint-enable */
+  }
+
+  p:not(:first-child) {
+    margin-top: 8px;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
