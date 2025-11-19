@@ -1,0 +1,19 @@
+.hero-advantages {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px 16px;
+
+    @media screen and (min-width: $sm) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    @media screen and (min-width: $md) {
+      gap: 24px;
+    }
+  }
+
+  &__advantage {
+    grid-column: span 2 / span 2;
+  }
+}

@@ -14,6 +14,8 @@ body {
   position: relative;
   height: 100%;
   font-family: Onest, Arial, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background-color);
 }
 
 body > div#app {

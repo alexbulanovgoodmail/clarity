@@ -1,0 +1,65 @@
+.home-hero {
+  height: 100svh;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px 0;
+
+  @media screen and (min-width: $md) {
+    padding: 80px 0;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 16px;
+
+    @media screen and (min-width: $md) {
+      grid-template-columns: repeat(12, 1fr);
+      gap: 64px 24px;
+    }
+  }
+
+  &__content {
+    grid-column: span 4 / span 4;
+
+    @media screen and (min-width: $md) {
+      grid-column: span 12 / span 12;
+    }
+
+    @media screen and (min-width: $xl) {
+      grid-column: span 6 / span 6;
+      grid-row-start: 1;
+    }
+  }
+
+  &__advantages {
+    grid-column: span 4 / span 4;
+
+    @media screen and (min-width: $md) {
+      grid-column: span 12 / span 12;
+    }
+
+    @media screen and (min-width: $xl) {
+      grid-column: span 6 / span 6;
+      grid-row-start: 2;
+    }
+  }
+
+  &__content > * + * {
+    margin-top: 24px;
+
+    @media screen and (min-width: $md) {
+      margin-top: 32px;
+    }
+  }
+
+  &__title {
+    @include typo-big;
+  }
+
+  &__description {
+    @include typo-hf;
+  }
+}

@@ -11,4 +11,8 @@
   --color-standart-white: #fcfcfc;
   --color-service-error: #ff2727;
   --color-service-disabled: #83869e50;
+
+  /* theme */
+  --color-text: var(--color-standart-dark);
+  --color-background-color: var(--color-standart-white);
 }

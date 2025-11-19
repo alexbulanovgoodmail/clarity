@@ -1,0 +1,15 @@
+.hero-advantage {
+  &__title {
+    margin-bottom: 8px;
+
+    @include typo-h2;
+
+    @media screen and (min-width: $md) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__description {
+    @include typo-p3;
+  }
+}
