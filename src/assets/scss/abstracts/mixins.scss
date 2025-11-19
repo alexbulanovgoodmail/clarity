@@ -259,4 +259,9 @@
   p:not(:last-child) {
     margin-bottom: 8px;
   }
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
 }
