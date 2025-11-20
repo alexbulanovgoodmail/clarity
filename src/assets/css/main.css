@@ -14,5 +14,7 @@
 
   /* theme */
   --color-text: var(--color-standart-dark);
+  --color-text-2: var(--color-standart-gray);
   --color-background-color: var(--color-standart-white);
+  --color-background-color-2: var(--color-standart-gray-lightest);
 }
