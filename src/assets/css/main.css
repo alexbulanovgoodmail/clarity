@@ -3,6 +3,9 @@
 :root {
   --color-black: #000;
   --color-white: #fff;
+  --color-brand-normal: #1774e1;
+  --color-brand-hover: #1a97ff;
+  --color-brand-disabled: #098fff50;
   --color-standart-dark: #0d1234;
   --color-standart-gray-medium: #70717a;
   --color-standart-gray: #83869e;
@@ -13,6 +16,7 @@
   --color-service-disabled: #83869e50;
 
   /* theme */
+
   --color-text: var(--color-standart-dark);
   --color-text-2: var(--color-standart-gray);
   --color-background-color: var(--color-standart-white);
