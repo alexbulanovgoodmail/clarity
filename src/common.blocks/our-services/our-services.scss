@@ -1,0 +1,92 @@
+.our-services {
+  margin: 16px 0;
+  padding: 40px 0;
+
+  @media screen and (min-width: $md) {
+    margin: 20px 0 0;
+  }
+
+  &__heading {
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+
+    @media screen and (min-width: $md) {
+      margin-bottom: 32px;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 24px;
+    }
+  }
+
+  &__title {
+    opacity: 0;
+    grid-column: span 4 / span 4;
+
+    @include typo-h2;
+
+    @media screen and (min-width: $md) {
+      grid-column: span 6 / span 6;
+    }
+
+    @media screen and (min-width: $lg) {
+      grid-column: span 8 / span 8;
+    }
+
+    @media screen and (min-width: $xl) {
+      grid-column: span 9 / span 9;
+    }
+  }
+
+  &__link-container {
+    grid-column: span 4 / span 4;
+
+    @media screen and (min-width: $md) {
+      grid-column: span 6 / span 6;
+      text-align: right;
+      align-self: flex-end;
+    }
+
+    @media screen and (min-width: $lg) {
+      grid-column: span 4 / span 4;
+    }
+
+    @media screen and (min-width: $xl) {
+      grid-column: span 3 / span 3;
+    }
+  }
+
+  &__carousel {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $max-container-width;
+  }
+
+  &__carousel.swiper {
+    padding: 0 16px;
+
+    @media screen and (min-width: $md) {
+      padding: 0 40px;
+    }
+  }
+
+  &__carousel .swiper-slide {
+    height: auto;
+  }
+
+  &__carousel .swiper-pagination {
+    margin-top: 16px;
+    position: static;
+  }
+
+  &__carousel .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-standart-gray-light);
+    opacity: 1;
+  }
+
+  &__carousel .swiper-pagination-bullet-active {
+    background-color: var(--color-brand-normal);
+  }
+}
