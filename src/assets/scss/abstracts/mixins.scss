@@ -201,6 +201,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 130%;
+  text-decoration: none;
 
   /* stylelint-disable */
   @media screen and (min-width: $md) {
@@ -223,6 +224,22 @@
     line-height: 130%;
   }
   /* stylelint-enable */
+}
+
+@mixin text-interactive {
+  color: var(--color-brand-normal);
+  transition: color $transition-duration $transition-function;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--color-brand-hover);
+  }
+
+  &:disabled {
+    color: var(--color-brand-disabled);
+    cursor: default;
+    pointer-events: none;
+  }
 }
 
 @mixin typo-meta {
@@ -261,7 +278,8 @@
   }
 
   a {
-    text-decoration: underline;
-    text-underline-offset: 4px;
+    text-decoration: none;
+
+    @include text-interactive;
   }
 }
