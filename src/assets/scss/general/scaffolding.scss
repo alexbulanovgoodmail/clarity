@@ -50,3 +50,25 @@ main {
     padding: 0 40px;
   }
 }
+
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+
+  & > * + * {
+    margin-left: 12px;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+
+    @media screen and (min-width: $md) {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  @include typo-link;
+  @include text-interactive;
+}
