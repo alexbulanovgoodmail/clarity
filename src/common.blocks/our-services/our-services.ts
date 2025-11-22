@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       type: 'bullets',
     },
     breakpoints: {
-      640: {
+      475: {
         spaceBetween: 16,
         slidesPerView: 2,
       },
